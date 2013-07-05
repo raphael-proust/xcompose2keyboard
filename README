@@ -1,0 +1,13 @@
+xcompose2keyboard converts .XCompose files for X11 input into a keyboard
+file for plan9.
+
+#Reasons
+
+When using acme(1), the multi-key combinations are not the same as with X11 applications. This is suboptimal. Hence this project.
+
+#Compilation
+
+`ocamlfind ocamlopt -package uutf -o xcompose2keyboard xcompose2keyboard.ml`
+
+#Usage
+	xcompose2keyboard <$HOME/.XCompose >keyboard
